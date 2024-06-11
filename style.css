@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+}
+
+table, th, td   {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 20px;
+}
+
+#about {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#projects {
+    background-color: #e2e2e2;
+}
+
+#contact {
+    background-color: #f4f4f4;
+}
+
+.contactlinks {
+
+display: flex;
+justify-content: center
+    
+}
+
+#screenshots {
+    background-color: #e2e2e2 ;
+}
+
+.imgcolumn {
+/*    display: grid;
+    grid-template-columns: repeat(2, 50em);
+    gap: 10px; /* Adjust the gap between images 
+    border: 50px;
+    width: auto;
+*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.imgcolumn img {
+    width: calc(50% - 10px); /* Subtracting a margin */
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .imgcolumn {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-top: 1em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+form button {
+    display: block;
+    margin: 1em 0;
+    padding: 0.5em 2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 0.5em 0;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    .project {
+        padding: 1em;
+        margin-bottom: 1em;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    header nav ul li {
+        margin: 0.25em 0;
+    }
+
+    form {
+        padding: 1em;
+    }
+
+    form input, form textarea {
+        padding: 0.5em;
+    }
+
+    form button {
+        padding: 0.5em 1em;
+    }
+}
