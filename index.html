@@ -20,34 +20,50 @@
 
     <section id="about" class="fade-in">
         <h2>About Me</h2>
-        <p>Hi, my name is Tran Quang Anh, and I come from Ho Chi Minh CIty, Vietnam. I have a keen interest in video games, especially ones involving music and strategy. </br> 
+        <p class="about-content" style="font-size: 25px;">Hi, my name is Tran Quang Anh, and I come from Ho Chi Minh CIty, Vietnam. I have a keen interest in video games, especially ones involving music and strategy. </br> 
             I am currently studying front-end web development at AMIT group in order to pursue a career in the same department. i"m also developing a game in Unity as a side project.</p>
     </section>
 
     <section id="projects" class="fade-in">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1: Platform 2D video game</h3>
-            <p>This project is a 2D platformer video game created with C# and Unity. It was made by me and another friend in cooperation. <br>
-            In this project, I designed all of its levels using design tools from unity, as well as coded the game's mechanics via C# (i.e. health bar, player controls, traps and collectible interaction)</p>
+        <div class="filter-buttons">
+            <!-- HTML !-->
+    <button class="button-84" role="button" data-filter="all">All</button>
+    <button class="button-84" role="button" data-filter="web">Web Dev</button>
+    <button class="button-84" role="button" data-filter="game">Game</button>
+    
         </div>
-        <div class="project">
-            <h3>Project 2: University Magazine website</h3>
-            <p>Developed by me and three other members, this is a website for a university which showcases magazines that students have created and published. <br>
-            I participated as a tester and product owner, handling the creation phases of the project as well as developing test cases to test features.</p>
+
+        <div class="project-grid">
+            <div class="project-description">
+            <div class="project-item" data-category="game">
+                <h2>Project 1: <a class="projectlink" href="https://github.com/QAnhTran/PlatformWalker/tree/master">Platform 2D video game</a> </h2>
+                <p>This project is a 2D platformer video game created with C# and Unity. It was made by me and another friend in cooperation. <br>
+                    In this project, I designed all of its levels using design tools from unity, as well as coded the game's mechanics via C# (i.e. health bar, player controls, traps and collectible interaction)</p>
+                    <td></td>
+            </div>
+
+            <div class="slideshow">
+                <img class="slide" width="800" height="400" style="display: none;" src="Screenshots/img1.png"></img>
+                <img class="slide" width="800" height="400" style="display: none;" src="Screenshots/img2.png"></img>
+            </div>
+
+            <div class="project-item" data-category="web">
+                <h2>Project 2: <a class="projectlink" href="https://github.com/mylovenkt/University_Mgz">University Magazine website</a> </h2>
+
+                <p>Developed by me and three other members, this is a website for a university which showcases magazines that students have created and published. <br>
+                    I participated as a tester and product owner, handling the creation phases of the project as well as developing test cases to test features.</p>
+                    <td></td>
+            </div>
+            <div class="slideshow">
+                <img class="slide" width="800" height="400" style="display: none;" src="Screenshots/img3.png"></img>
+                <img class="slide" width="800" height="400" style="display: none;" src="Screenshots/img4.png"></img>
+            </div>
+            </div>
+
         </div>
     </section>
 
-    <table class="fade-in">
-        <tr>
-        <th>Project 1</th>
-        <th>Project 2</th>
-        </tr>
-        <tr>
-        <td><a href="https://github.com/QAnhTran/PlatformWalker/tree/master">Link</a></td>
-        <td><a href="https://github.com/mylovenkt/University_Mgz">Link</a></td>
-        </tr>
-    </table>
 
 
 
@@ -64,8 +80,8 @@
     <section id="contact" class="fade-in">
         <h2>Links</h2>
         <div class="contactlinks">
-        <a href="tquanganh87@gmail.com"><img src="gmail.png" width="150px" height="150px"></label></a><br></img>
-        <a href="https://github.com/QAnhTran"><img src="github.png"></label></a></img>
+        <a class="contact" href="tquanganh87@gmail.com"><img src="gmail.png" width="150px" height="150px"></label></a><br></img>
+        <a class="contact" href="https://github.com/QAnhTran"><img src="github.png"></label></a></img>
         </div>
 
     </section>
@@ -73,5 +89,6 @@
     <footer class="fade-in">
         <p>&copy; 2024 My Portfolio</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
